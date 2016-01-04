@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configs>
+	<!--please use only Chrome, Firefox -->
+	<mainBrowser>Chrome</mainBrowser>
+	<defaultURL>https://google.com</defaultURL>
+	<!--this wait will be used for implicit wait by Thread.sleep -->
+	<implicitWaitMls>500</implicitWaitMls>
+	<!--this wait will be used for implicit wait by selenium config -->
+	<implicitSeleniumWaitSec>5</implicitSeleniumWaitSec>
+</configs>
+

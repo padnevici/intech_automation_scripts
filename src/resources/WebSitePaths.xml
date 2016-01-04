@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webSites>
+	<insegment>
+		<urls>
+			<home>http://www.insegment.com</home>
+			<contactUs>/contact-us</contactUs>
+		</urls>
+	</insegment>
+
+</webSites>
