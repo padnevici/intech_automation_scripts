@@ -108,7 +108,14 @@ public class Browser {
 	}
 
 	public static void clickOnWebElement(WebElement element) {
+		logger.debug("Clicking on web element");
 		element.click();
+		implicitWait();
+	}
+
+	public static void enterInWebElement(WebElement element, String text) {
+		logger.debug(String.format("Entering following [%s] string", text));
+		element.sendKeys(text);
 		implicitWait();
 	}
 

@@ -15,6 +15,7 @@ public class AppTest extends TestBase {
 		try {
 			WebSites.Insegment.getContactUs().goTo();
 			Assert.assertTrue(WebSites.Insegment.getContactUs().isAt());
+			WebSites.Insegment.getContactUs().submitForm();
 		} catch (Exception e) {
 			logger.error(e);
 			logger.error(e.getStackTrace());
