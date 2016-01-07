@@ -11,9 +11,10 @@ import intech.automation.framework.*;
  */
 public class AppTest extends TestBase {
 	@Test
-	public void test_1(/*String searchString, String applicationName*/) {
+	public void test_1(/* String searchString, String applicationName */) {
 		try {
-			Browser.initialize();
+			WebSites.Insegment.getContactUs().goTo();
+			Assert.assertTrue(WebSites.Insegment.getContactUs().isAt());
 		} catch (Exception e) {
 			logger.error(e);
 			logger.error(e.getStackTrace());

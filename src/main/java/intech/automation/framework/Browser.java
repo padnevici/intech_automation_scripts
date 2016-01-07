@@ -68,7 +68,7 @@ public class Browser {
 	}
 
 	private static void init() {
-		navigate(Configs.getInstance().getUrl());
+		navigate("http://www.google.com");
 		webDriver.manage().window().setPosition(new Point(0, 0));
 		webDriver.manage().window().maximize();
 		webDriver.manage().timeouts().implicitlyWait(Configs.getInstance().getImplicitSeleniumWaitTime(),
@@ -76,7 +76,7 @@ public class Browser {
 	}
 
 	public static void navigate(String url) {
-		logger.info(String.format("Navigating to [%s] url", url));
+		logger.info(String.format("Go to [%s] url", url));
 		webDriver.navigate().to(url);
 		implicitWait();
 	}

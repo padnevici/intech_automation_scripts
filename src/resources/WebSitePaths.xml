@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <webSites>
-	<insegment>
-		<urls>
-			<home>http://www.insegment.com</home>
-			<contactUs>/contact-us</contactUs>
-		</urls>
-	</insegment>
+	<Insegment>
+		<pages>
+			<Home title='Boston Full Service Digital Marketing and Advertising Agency'
+				name='Insegment -> Home'>http://www.insegment.com</Home>
+			<ContactUs
+				title='Contact Us - inSegment Boston Digital Marketing Agency | InSegment'
+				name='Insegment -> Contact Us'>http://www.insegment.com/contact-us</ContactUs>
+		</pages>
+	</Insegment>
 
 </webSites>
