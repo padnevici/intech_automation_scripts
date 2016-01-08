@@ -22,7 +22,7 @@ public class TestBase extends TestListenerAdapter {
 
 	@AfterClass
 	public void tearDown() throws IOException {
-		System.in.read();
+		//System.in.read();
 		Browser.quit();
 	}
 

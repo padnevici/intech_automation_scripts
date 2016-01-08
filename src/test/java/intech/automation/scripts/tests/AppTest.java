@@ -5,17 +5,16 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import intech.automation.framework.*;
+import intech.automation.scripts.formvalidation.FormValidation;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest extends TestBase {
 	@Test
-	public void test_1(/* String searchString, String applicationName */) {
+	public void insegmentFormValidation(/* String searchString, String applicationName */) {
 		try {
-			WebSites.Insegment.getContactUs().goTo();
-			Assert.assertTrue(WebSites.Insegment.getContactUs().isAt());
-			WebSites.Insegment.getContactUs().submitForm();
+			FormValidation.Insegment.checkAll();
 		} catch (Exception e) {
 			logger.error(e);
 			logger.error(e.getStackTrace());
